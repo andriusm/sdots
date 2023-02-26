@@ -11,6 +11,10 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+if packer_bootstrap then
+    require('packer').sync()
+end
+
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
@@ -61,8 +65,4 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
-
-    if packer_bootstrap then
-        require('packer').sync()
-    end
 end)

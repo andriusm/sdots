@@ -14,7 +14,7 @@
 	amend = commit --amend
 	st = status
 	s = status --short --untracked-files
-	
+
 	r = rebase
 	ri = rebase --interactive
 	rc = rebase --continue
