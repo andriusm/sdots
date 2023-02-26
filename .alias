@@ -1,0 +1,23 @@
+# aliases
+
+alias s='cd ..'
+alias ls='ls --time-style="+%Y-%m-%d %H:%M:%S" --color=auto'
+alias ll='ls -lFh'
+alias la='ls -laFh'
+alias l='ls -Fh'
+alias less='less -r'
+alias rr="printf '\x1b]12;red\x1b\\'"
+alias ag='ag --hidden'
+alias cal='cal -m'
+alias cp='cp -i'
+alias df='df -h'
+alias free='free -m'
+alias fzf='fzf --exact'
+alias cdtmp='cd `mktemp -d /tmp/experiment-XXXXXX`'
+alias cnt="find . -type f | wc -l"
+alias ggpull='git pull origin $(current_branch)'
+alias ggpur='git pull --rebase origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias gam='git commit -a --amend --no-edit'
+alias gbr="git for-each-ref --sort=committerdate refs/heads/"
