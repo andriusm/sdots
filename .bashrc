@@ -9,4 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+HISTFILE=$HOME/.local/state/bash
+
 source .alias
+source .constants
