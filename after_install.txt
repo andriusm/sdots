@@ -4,4 +4,4 @@ sudo useradd -m -G wheel $USER
 sudo passwd $USER
 
 sudo pacman -Syu
-sudo pacman -S htop lf tree fzf go neovim gdu
+sudo pacman -S htop lf tree fzf go neovim gdu cmake
