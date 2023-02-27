@@ -4,8 +4,17 @@ sudo useradd -m -G wheel $USER
 sudo passwd $USER
 
 sudo pacman -Syu
-sudo pacman -S htop lf tree fzf go neovim gdu cmake tig
+sudo pacman -S htop lf tree fzf go neovim gdu cmake tig node npm
 
 mkdir -p $HOME/.local/share/tig
 mkdir -p $HOME/.local/state/bash
 
+# removing to reinstall with
+sudo pip uninstall urllib3
+sudo pip uninstall idna
+sudo pip uninstall requests
+sudo pip uninstall six
+sudo pip uninstall configobj
+sudo pip uninstall setuptools
+
+pacman -S certbox-nginx
