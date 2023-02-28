@@ -4,6 +4,10 @@ sudo useradd -m -G wheel $USER
 sudo passwd $USER
 
 sudo pacman -Syu
+sudo pacman -S pacman-contrib
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.orig
+sudo rankmirrors -n 5 /etc/pacman.d/mirrorlist.orig > /etc/pacman.d/mirrorlist
+
 sudo pacman -S htop lf tree fzf go neovim gdu cmake tig node npm
 
 mkdir -p $HOME/.local/share/tig
